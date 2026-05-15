@@ -1,0 +1,10 @@
+# Local-only files — never push to GitHub
+INTERNAL.md
+
+# macOS clutter
+.DS_Store
+
+# Editor / OS
+*~
+.idea/
+.vscode/

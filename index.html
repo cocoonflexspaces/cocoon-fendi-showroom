@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cocoon × Fendi — Showroom venue proposal · September 6–13, 2026</title>
+<meta name="description" content="Three Manhattan venue directions for the Fendi showroom — by-appointment client event, September 6–13, 2026. Prepared by Cocoon Flex Spaces." />
+<style>
+  /* ============================================================
+     COCOON BRAND TOKENS
+     Primary: #F54029 (Brilliance / terracotta) + #F5F2E8 (Natural / cream)
+     Accent:  #275453 (Clarity / deep teal), #000000 (Black)
+     Type:    Helvetica Neue — Bold for titles, Medium for headlines, Regular for body
+     ============================================================ */
+
+  :root {
+    --cream: #F5F2E8;
+    --cream-deep: #ECE7D6;
+    --cream-warm: #EFE9D7;
+    --terracotta: #F54029;
+    --terracotta-soft: #E8593F;
+    --terracotta-deep: #C8331E;
+    --teal: #275453;
+    --teal-soft: #355F5E;
+    --ink: #1A1A1A;
+    --ink-soft: #4A4A4A;
+    --ink-mute: #6B6B6B;
+    --rule: rgba(26,26,26,0.12);
+    --rule-soft: rgba(26,26,26,0.06);
+    --max: 1280px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: var(--terracotta); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* TYPE SCALE */
+  .superhead {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 11px;
+    color: var(--terracotta);
+  }
+  .title {
+    font-weight: 700;
+    font-size: clamp(40px, 7vw, 96px);
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+  .headline {
+    font-weight: 500;
+    font-size: clamp(24px, 3.2vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -0.012em;
+    margin: 0 0 0.6em;
+  }
+  .lede {
+    font-weight: 400;
+    font-size: clamp(18px, 1.5vw, 22px);
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin: 0 0 1em;
+  }
+  .body { font-size: 17px; line-height: 1.6; }
+  .caption {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+  }
+  .eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+  }
+
+  /* SECTION FRAME */
+  section {
+    padding: clamp(64px, 10vh, 140px) clamp(24px, 5vw, 80px);
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+  section + section { border-top: 1px solid var(--rule); }
+  section.tight { padding-top: clamp(48px, 6vh, 80px); padding-bottom: clamp(48px, 6vh, 80px); }
+  section.full {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.full > .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+
+  .logomark { width: 28px; height: 28px; flex: 0 0 auto; }
+  .wordmark { height: 16px; width: auto; flex: 0 0 auto; }
+
+  /* TOP BAR */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245, 242, 232, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 14px clamp(24px, 5vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .topbar-brand { display: flex; align-items: center; gap: 18px; font-size: 13px; }
+  .topbar-brand .cocoon { display: flex; align-items: center; gap: 10px; padding-right: 18px; }
+  .topbar-brand .divider { width: 1px; height: 22px; background: var(--rule); flex: 0 0 auto; }
+  .topbar-brand .partner {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink);
+  }
+  .topbar-meta {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    .topbar-meta { display: none; }
+  }
+
+  /* COVER */
+  .cover {
+    position: relative;
+    background: var(--cream);
+    padding: 0;
+    max-width: none;
+    overflow: hidden;
+    border-bottom: 1px solid var(--rule);
+  }
+  .cover-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    min-height: 640px;
+  }
+  .cover-text {
+    padding: clamp(40px, 6vw, 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    background: var(--cream);
+  }
+  .cover-image {
+    position: relative;
+    overflow: hidden;
+    background: var(--ink);
+  }
+  .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cover-meta {
+    display: grid;
+    gap: 6px;
+    margin-top: 32px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+  .cover-meta strong { color: var(--ink); font-weight: 600; }
+
+  /* TWO-COL */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: start;
+  }
+  .two-col.media-first { grid-template-columns: 1.4fr 1fr; }
+  .two-col.balanced { grid-template-columns: 1fr 1fr; }
+
+  /* PHOTO CARDS / FRAMES */
+  .photo {
+    background: var(--cream-deep);
+    overflow: hidden;
+    position: relative;
+  }
+  .photo img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    transition: transform 600ms ease;
+  }
+  .photo.tall img { aspect-ratio: 3/4; }
+  .photo.square img { aspect-ratio: 1/1; }
+  .photo.wide img { aspect-ratio: 16/9; }
+
+  .photo-grid { display: grid; gap: 18px; }
+  .photo-grid.two { grid-template-columns: 1fr 1fr; }
+  .photo-grid.three { grid-template-columns: repeat(3, 1fr); }
+  .photo-grid.four { grid-template-columns: repeat(4, 1fr); }
+
+  .photo-grid.editorial {
+    grid-template-columns: 1.6fr 1fr;
+    gap: 18px;
+  }
+  .photo-grid.editorial .photo { height: 100%; }
+  .photo-grid.editorial .photo img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  .photo-grid.editorial .photo:first-child img { aspect-ratio: 4/5; }
+
+  /* QUAD MOSAIC — 1 featured + 3 stacked
+     The grid carries its own aspect-ratio so the layout sizes the same
+     whether real images, placeholders, or a mix render inside. */
+  .photo-grid.quad {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 18px;
+    aspect-ratio: 16/11;
+    max-height: 720px;
+  }
+  .photo-grid.quad > :nth-child(1) { grid-row: 1 / 4; }
+  .photo-grid.quad .photo { height: 100%; min-height: 0; overflow: hidden; }
+  .photo-grid.quad .photo img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  /* Placeholders injected into a quad cell — collapse to fill the cell
+     rather than stretching to their content. */
+  .photo-grid.quad .photo .placeholder-frame {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto !important;
+    padding: 20px 16px;
+    min-height: 0;
+    gap: 6px;
+  }
+  .photo-grid.quad .photo .placeholder-frame .ph-label { font-size: 10px; }
+  .photo-grid.quad .photo .placeholder-frame .ph-text { font-size: 12px; line-height: 1.4; }
+  @media (max-width: 900px) {
+    .photo-grid.quad {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      aspect-ratio: auto;
+      max-height: none;
+    }
+    .photo-grid.quad > :nth-child(1) {
+      grid-row: 1;
+      grid-column: 1 / 3;
+    }
+    .photo-grid.quad .photo img { aspect-ratio: 3/2; }
+    .photo-grid.quad .photo .placeholder-frame { aspect-ratio: 3/2 !important; }
+  }
+
+  /* Floor-labelled tile — small caption inside the photo frame */
+  .photo .floor-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(26,26,26,0.78);
+    color: var(--cream);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 6px 10px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  /* OPTION HEADER — venue sections */
+  .option-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 28px;
+    align-items: end;
+    margin-bottom: 28px;
+  }
+  .option-num {
+    font-size: clamp(64px, 8vw, 110px);
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--terracotta);
+    letter-spacing: -0.04em;
+  }
+  .option-title {
+    font-size: clamp(28px, 3.4vw, 44px);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .option-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  /* PRICING TABLE — line-item breakdown */
+  .breakdown {
+    background: #FFF;
+    border: 1px solid var(--rule);
+    padding: 0;
+    margin-top: 32px;
+  }
+  .breakdown table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .breakdown th, .breakdown td {
+    padding: 14px 24px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .breakdown th {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    background: var(--cream-warm);
+  }
+  .breakdown td.amount, .breakdown th.amount { text-align: right; font-variant-numeric: tabular-nums; }
+  .breakdown td.qty { text-align: center; color: var(--ink-soft); width: 60px; font-variant-numeric: tabular-nums; }
+  .breakdown tr.subtotal td {
+    background: var(--cream-warm);
+    font-weight: 700;
+    border-top: 2px solid var(--ink);
+    font-size: 15px;
+  }
+  .breakdown tr.subtle td { color: var(--ink-soft); font-size: 13px; }
+  .breakdown tr.total td {
+    background: var(--terracotta);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+  .breakdown tr.total td .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; display: block; opacity: 0.85; font-weight: 700; margin-bottom: 2px; }
+  @media (max-width: 600px) {
+    .breakdown th, .breakdown td { padding: 10px 14px; }
+  }
+
+  /* CALLOUT BAR */
+  .callout {
+    background: var(--terracotta);
+    color: #FFF;
+    padding: clamp(40px, 6vw, 80px);
+    margin: 0;
+    max-width: none;
+  }
+  .callout .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+  .callout .title { color: #FFF; }
+  .callout .superhead { color: rgba(255,255,255,0.88); }
+  .callout .lede { color: rgba(255,255,255,0.92); }
+
+  /* DIVIDER LABEL */
+  .divider-label {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items: center;
+    margin: 0 0 32px;
+  }
+  .divider-label .text {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--terracotta);
+  }
+  .divider-label .line {
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* SIMPLE STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .stat .num {
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--terracotta);
+  }
+  .stat .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* NOTE BOX */
+  .note {
+    background: #FFF;
+    border-left: 3px solid var(--terracotta);
+    padding: 32px 36px;
+    margin: 32px 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .note p { margin: 0 0 14px; }
+  .note p:last-child { margin-bottom: 0; }
+  .note .signature {
+    margin-top: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--terracotta);
+    font-weight: 700;
+  }
+
+  /* PILL CTA */
+  .cta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: var(--ink);
+    color: var(--cream);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background 200ms ease;
+    white-space: nowrap;
+  }
+  .cta-pill:hover { background: var(--terracotta); text-decoration: none; }
+  .cta-pill.terracotta { background: var(--terracotta); color: #FFF; }
+  .cta-pill.terracotta:hover { background: var(--ink); }
+
+  /* WALKTHROUGH STEPS — used for "at a glance" comparison + next steps */
+  .walk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .walk .step {
+    border-top: 2px solid var(--terracotta);
+    padding-top: 24px;
+  }
+  .walk .step-num {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--terracotta);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .walk .step h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .walk.aligned .step {
+    display: flex;
+    flex-direction: column;
+  }
+  .walk.aligned .step h4 {
+    line-height: 1.2 !important;
+    min-height: 2.4em;
+    margin: 0 0 14px;
+    display: block;
+  }
+  .walk.aligned .step .step-body {
+    flex: 1 1 auto;
+    margin: 0 0 18px;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .walk.aligned .step .step-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--terracotta);
+    letter-spacing: -0.02em;
+    margin-top: auto;
+    line-height: 1;
+  }
+  .walk.aligned .step .step-price .sub {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-mute);
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  .walk .step p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  /* PLACEHOLDER FRAME — defensive fallback for any image that fails to load */
+  .placeholder-frame {
+    background: var(--cream-deep);
+    border: 1px dashed rgba(26,26,26,0.18);
+    padding: 24px 18px;
+    text-align: center;
+    color: var(--ink-soft);
+    aspect-ratio: 3/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .placeholder-frame .ph-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+  }
+  .placeholder-frame .ph-text { font-size: 12px; max-width: 320px; line-height: 1.4; }
+  .placeholder-frame.tall { aspect-ratio: 3/4; }
+  /* Universal: any placeholder inside any photo-grid cell shrinks to fit */
+  .photo-grid .photo .placeholder-frame {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2 !important;
+    min-height: 0;
+  }
+
+  /* "EMERGING" CARD — for venue D */
+  .emerging-card {
+    background: var(--cream-deep);
+    border: 1px solid var(--rule);
+    padding: clamp(40px, 5vw, 64px);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: clamp(24px, 4vw, 48px);
+    align-items: center;
+  }
+  .emerging-card .num {
+    font-size: clamp(56px, 7vw, 96px);
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--terracotta);
+    letter-spacing: -0.04em;
+  }
+  .emerging-card .tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .emerging-card .text h3 {
+    margin: 0 0 12px;
+    font-size: clamp(22px, 2.4vw, 30px);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+  }
+  .emerging-card .text p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+    max-width: 640px;
+  }
+  .emerging-card .status {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+    color: var(--terracotta);
+    border: 1px solid var(--terracotta);
+    padding: 10px 14px;
+    white-space: nowrap;
+  }
+  @media (max-width: 700px) {
+    .emerging-card { grid-template-columns: 1fr; text-align: left; }
+    .emerging-card .status { justify-self: start; }
+  }
+
+  /* EXPANSION SIDEBAR — used inside Venue A for "more floors available" */
+  .expansion {
+    background: var(--cream-warm);
+    border-left: 3px solid var(--terracotta);
+    padding: 28px 32px;
+    margin-top: 32px;
+  }
+  .expansion .tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+    margin-bottom: 10px;
+  }
+  .expansion h4 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .expansion p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  /* TEAL CALLOUT — for services note */
+  .callout.teal {
+    background: var(--teal);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 60px clamp(24px, 5vw, 80px);
+    border-top: 1px solid var(--rule);
+    background: var(--cream);
+    color: var(--ink-soft);
+  }
+  footer .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  footer .sig { font-weight: 600; color: var(--ink); font-size: 14px; }
+  footer .meta { font-size: 12px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .cover-grid { grid-template-columns: 1fr; min-height: auto; }
+    .cover-image { height: 50vh; }
+    .two-col, .two-col.media-first, .two-col.balanced { grid-template-columns: 1fr; gap: 32px; }
+    .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr 1fr; }
+    .walk { grid-template-columns: 1fr; gap: 28px; }
+  }
+  @media (max-width: 600px) {
+    .photo-grid.two, .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr; }
+    section { padding: 56px 20px; }
+    .topbar-inner { padding: 14px 20px; }
+  }
+
+  @media print {
+    .topbar { display: none; }
+    section { page-break-inside: avoid; }
+  }
+
+  /* LIGHTBOX — fullscreen viewer for venue photos */
+  section[data-lightbox] .photo { cursor: zoom-in; }
+  section[data-lightbox] .photo img { transition: transform 500ms ease, filter 300ms ease; }
+  section[data-lightbox] .photo:hover img { transform: scale(1.03); filter: brightness(1.04); }
+
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.94);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(20px, 5vw, 56px);
+    cursor: zoom-out;
+    opacity: 0;
+    transition: opacity 250ms ease;
+  }
+  .lightbox.open { display: flex; opacity: 1; }
+  .lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    transform: scale(0.96);
+    transition: transform 300ms cubic-bezier(.2, .8, .2, 1);
+  }
+  .lightbox.open img { transform: scale(1); }
+  .lightbox-close {
+    position: fixed;
+    top: 22px;
+    right: 26px;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 50%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background 200ms ease;
+  }
+  .lightbox-close:hover { background: rgba(255, 255, 255, 0.18); }
+  .lightbox-caption {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-brand">
+      <span class="cocoon">
+        <img src="img/cocoon/mark-128.png" alt="Cocoon" class="logomark" />
+        <img src="img/cocoon/wordmark-320.png" alt="cocoon" class="wordmark" />
+      </span>
+      <span class="divider" aria-hidden="true"></span>
+      <span class="partner">Fendi · Showroom</span>
+    </div>
+    <div class="topbar-meta">By appointment · September 6–13, 2026</div>
+  </div>
+</header>
+
+<!-- COVER -->
+<section class="cover full">
+  <div class="cover-grid">
+    <div class="cover-text">
+      <div>
+        <div class="superhead">Showroom · By appointment</div>
+        <h1 class="title" style="margin-top:18px;">Fendi<br/>at New York.<br/><span style="color:var(--terracotta)">September 6–13<sup style="font-size:0.5em;letter-spacing:0;top:-0.6em;position:relative;">.</sup></span></h1>
+        <p class="lede" style="margin-top:32px; max-width: 480px;">Three Manhattan venue directions for the September showroom — each suited to a private, appointment-led client moment.</p>
+        <a href="#options" class="cta-pill terracotta" style="margin-top: 28px;">How to read this ↓</a>
+      </div>
+      <div class="cover-meta">
+        <div><strong>Event</strong> &nbsp;Fendi Showroom · top-client presentation</div>
+        <div><strong>City</strong> &nbsp;New York · Manhattan (Brooklyn excluded)</div>
+        <div><strong>Dates</strong> &nbsp;September 6–13, 2026 (8 days)</div>
+        <div><strong>Format</strong> &nbsp;1 day prep · 6 days live · 1 day strike</div>
+        <div><strong>Capacity</strong> &nbsp;~40 staff total · max ~20 clients on-site at any moment</div>
+        <div><strong>Access</strong> &nbsp;By appointment, throughout the day</div>
+        <div><strong>Prepared for</strong> &nbsp;Fendi · Showroom &amp; Client Events</div>
+        <div><strong>Prepared by</strong> &nbsp;Eduard Monteagudo · Cocoon Flex Spaces</div>
+      </div>
+    </div>
+    <div class="cover-image">
+      <img src="img/venue-b/staircase-up.jpg" alt="Atmospheric Manhattan venue interior" />
+    </div>
+  </div>
+</section>
+
+<!-- A NOTE FROM COCOON -->
+<section id="how-this-works">
+  <div class="two-col">
+    <div>
+      <div class="superhead">A note from Cocoon</div>
+      <h2 class="headline" style="margin-top:14px;">A revised brief, three venue directions, and a fourth in the wings — each chosen for the way it would hold a private, appointment-led week.</h2>
+    </div>
+    <div>
+      <div class="note body">
+        <p>Following the move to September and the decision to keep the showroom in Manhattan, we've returned to the field with a tighter brief: <em>a discreet, by-appointment client week — quiet, photogenic, and architecturally credible</em>.</p>
+        <p>What follows are <strong>six landmarked Manhattan addresses</strong>, each with its own temperament. The first three (A, B, C) are the leading shortlist — proposals firmly in hand, availability either confirmed or close to it. The next three (D, E, F) are early-stage options we're surfacing as alternatives or as venues for the one-night dinner moment: an Astor-family townhouse with a garden, a 1919 Park Avenue mansion, and a Fifth Avenue–corner pair of Gilded-Age mansions. Each of those carries its own availability caveat we've flagged inside the section.</p>
+        <p>All numbers shown are the all-in venue figures. Service layers — security, F&amp;B, photography, floor management — sit outside this deck and we'll bring those forward once a venue is locked.</p>
+        <div class="signature">— Eduard, Cocoon Flex Spaces</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE BRIEF -->
+<section class="full" id="brief">
+  <div class="inner">
+    <div class="superhead">The brief</div>
+    <h2 class="title" style="font-size: clamp(36px, 5vw, 64px); max-width: 1100px; margin-top: 18px;">An eight-day showroom for Fendi's most considered clients — appointment-only, calmly staffed, presented in a Manhattan setting that reads as architecture, not event.</h2>
+  </div>
+  <div class="inner" style="margin-top: 48px;">
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="num">8</div>
+        <div class="label">Days · 1 prep<br/>6 live · 1 strike</div>
+      </div>
+      <div class="stat">
+        <div class="num">~40</div>
+        <div class="label">Staff total<br/>executives · tailors · floor</div>
+      </div>
+      <div class="stat">
+        <div class="num">≤20</div>
+        <div class="label">Clients on-site<br/>at any moment</div>
+      </div>
+      <div class="stat">
+        <div class="num">By</div>
+        <div class="label">Appointment<br/>throughout the day</div>
+      </div>
+    </div>
+  </div>
+  <div class="inner" style="margin-top: 56px;">
+    <div class="two-col">
+      <div>
+        <div class="caption" style="margin-bottom: 12px;">What the showroom is doing</div>
+        <p class="body">Hosting Fendi's top clients across a full week — by appointment, in measured numbers. Presenting new collections in a setting where the architecture does the framing and the conversation is unhurried. Floor staff and tailors moving discreetly between rooms, clients arriving and leaving at their own pace.</p>
+      </div>
+      <div>
+        <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">What the venue needs to deliver</div>
+        <p class="body">Rooms that feel intentional and quiet — not branded, not staged. Enough square footage to keep separate moments running simultaneously (a presentation room, a tailoring corner, a service space, a back-of-house). Daylight where possible, exclusive access throughout the run, and the kind of address Fendi's clients already know how to find.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== VENUE OPTIONS CALLOUT =================== -->
+<section class="callout" id="options">
+  <div class="inner">
+    <div class="superhead" style="color: rgba(255,255,255,0.92);">Venue · Six directions</div>
+    <h2 class="title" style="margin-top:18px; max-width: 1100px; font-size: clamp(34px, 5vw, 64px);">A landmarked mansion, multi-floor.<br/>An Upper East Side gallery house.<br/>A Beaux-Arts mansion on Fifth Avenue.<br/>An Astor-family townhouse with garden.<br/>A 1919 Park Avenue mansion.<br/>A Fifth Avenue–corner pair of Gilded-Age mansions.</h2>
+    <p class="lede" style="margin-top: 28px; max-width: 820px;">Same eight-day window. Six distinct architectures, each with its own temperament. The first three are the leading shortlist; the next three are early-stage options we're surfacing so Fendi has the full picture before deciding.</p>
+  </div>
+</section>
+
+<!-- ========================================================
+     VENUE A · MANHATTAN MANSION — FLOOR 1 (EXPANDABLE)
+     ======================================================== -->
+<section data-lightbox>
+  <div class="option-header">
+    <div class="option-num">A</div>
+    <div>
+      <div class="option-tag">Venue A · A landmarked Manhattan mansion · multi-floor</div>
+      <h3 class="option-title">A private mansion with the flexibility to grow.<br/>Floor 1 as the anchor — three additional floors available to expand into.</h3>
+    </div>
+  </div>
+
+  <!-- Floor 1 — the anchor floor — gets the editorial weight -->
+  <div class="divider-label" style="margin-top: 40px;">
+    <div class="text">Floor 1 · the anchor</div>
+    <div class="line"></div>
+    <div class="text">Included in the rental · six rooms</div>
+  </div>
+
+  <div class="photo-grid three">
+    <div class="photo">
+      <img src="img/venue-a/f1-entrance.jpg" alt="Floor 1 entrance hall — limestone walls, hexagonal-tile floor, wrought-iron entry gates, marble-mantel fireplace" />
+      <span class="floor-tag">Entrance hall</span>
+    </div>
+    <div class="photo">
+      <img src="img/venue-a/f1-staircase.jpg" alt="Floor 1 main staircase — curved stone steps, wrought-iron balustrade, marble-inlay floor, arched windows" />
+      <span class="floor-tag">Main staircase</span>
+    </div>
+    <div class="photo">
+      <img src="img/venue-a/f1-library.jpg" alt="Floor 1 library — wood-panelled walls, carved stone fireplace, coffered wood ceiling, leaded windows" />
+      <span class="floor-tag">Library</span>
+    </div>
+    <div class="photo">
+      <img src="img/venue-a/f1-parlor.jpg" alt="Floor 1 parlor — white panelled walls, three tall arched French doors, herringbone parquet floor" />
+      <span class="floor-tag">Parlor</span>
+    </div>
+    <div class="photo">
+      <img src="img/venue-a/f1-dining.jpg" alt="Floor 1 dining room — wood-panelled walls, white marble fireplace, painted barrel-vault ceiling, arched garden windows" />
+      <span class="floor-tag">Dining room</span>
+    </div>
+    <div class="photo">
+      <img src="img/venue-a/f1-courtyard.jpg" alt="Floor 1 courtyard — interior brick-paved garden with leaded-glass conservatory windows and terra-cotta tile roof" />
+      <span class="floor-tag">Courtyard</span>
+    </div>
+  </div>
+
+  <!-- Upper floors — small expansion row showing one shot per floor -->
+  <div class="divider-label" style="margin-top: 64px;">
+    <div class="text">Floors 2 – 4 · expandable</div>
+    <div class="line"></div>
+    <div class="text">Available to add to the booking</div>
+  </div>
+
+  <div class="photo-grid three">
+    <div class="photo">
+      <img src="img/venue-a/f2-black-white.jpg" alt="Floor 2 — geometric black-and-white tile floor in a hexagon pattern, white panelled walls, three tall arched windows" />
+      <span class="floor-tag">Floor 2 · Geometric salon</span>
+    </div>
+    <div class="photo">
+      <img src="img/venue-a/f3-mosaic.jpg" alt="Floor 3 — mosaic-tile fireplace with sunburst pattern, marble surround, alcove shelves, parquet floor" />
+      <span class="floor-tag">Floor 3 · Mosaic room</span>
+    </div>
+    <div class="photo">
+      <img src="img/venue-a/f4-ballroom.jpg" alt="Floor 4 — ballroom-scale room with arched windows, sheer curtains, dark hardwood floor" />
+      <span class="floor-tag">Floor 4 · Ballroom</span>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for the Fendi week</div>
+      <p class="body">A private mansion with four stacked floors and a kitchen on premises — exactly the kind of building that can absorb a week-long appointment program without feeling like an event venue. <strong>Floor 1 is the anchor floor included in the rental</strong> — six distinct rooms across one floor: a limestone entrance hall, a wood-panelled library, a barrel-vault dining room, a parlor opening to a courtyard, a curved main staircase, and the courtyard itself. That alone is enough room to run a presentation suite, a tailoring corner, a service area, and a quiet clienteling room without anyone treading on each other's space.</p>
+      <p class="body">If Fendi wants more room to breathe, the three upper floors are available to add to the booking — a geometric-tile salon on Floor 2, a mosaic-fireplace room on Floor 3, or the top-floor ballroom on Floor 4. Each carries its own architectural temperament; each can be locked-in separately or as a bundle.</p>
+      <p class="body">Hold-status today: <strong>holds exist on these dates but are challengeable</strong>. Our recommendation, if this direction has any pull, is to move on it quickly.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· Four full floors available (Floor 1 included; Floors 2–4 expandable)</li>
+        <li>· Six distinct Floor 1 rooms — entrance hall, library, dining, parlor, staircase, courtyard</li>
+        <li>· Kitchen + pantry on premises · included with the rental</li>
+        <li>· Private street-level entrance · landmarked façade</li>
+        <li>· 12-hour standard event days · overtime available</li>
+        <li>· Capacity comfortably accommodates ~40 staff + 20 clients on-site</li>
+      </ul>
+
+      <div class="expansion">
+        <div class="tag">Floor expansion · available on request</div>
+        <h4>Floors 2, 3, and 4 are each available to add à la carte.</h4>
+        <p>The pricing below covers Floor 1 only — the anchor floor with its six rooms. Adding Floor 2's geometric salon, Floor 3's mosaic room, or the top-floor ballroom is straightforward; pricing is on request, scaled to the floors selected.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- A · PRICING -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">A · Pricing</div>
+      <div class="line"></div>
+      <div class="text">All-in · Floor 1 · 8 days</div>
+    </div>
+
+    <div class="breakdown">
+      <table>
+        <thead>
+          <tr>
+            <th>Line item</th>
+            <th class="qty">Days</th>
+            <th class="amount">Rate</th>
+            <th class="amount">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Prep day</strong><div class="caption" style="margin-top:4px;">Sept 6 · 50 people or fewer on-site</div></td>
+            <td class="qty">1</td>
+            <td class="amount">$40,000</td>
+            <td class="amount">$40,000</td>
+          </tr>
+          <tr>
+            <td><strong>Live event days</strong><div class="caption" style="margin-top:4px;">Sept 7–12 · full use, by-appointment client window</div></td>
+            <td class="qty">6</td>
+            <td class="amount">$45,000</td>
+            <td class="amount">$270,000</td>
+          </tr>
+          <tr>
+            <td><strong>Strike day</strong><div class="caption" style="margin-top:4px;">Sept 13 · 50 people or fewer on-site</div></td>
+            <td class="qty">1</td>
+            <td class="amount">$40,000</td>
+            <td class="amount">$40,000</td>
+          </tr>
+          <tr>
+            <td><strong>Cleaning</strong><div class="caption" style="margin-top:4px;">Pre- and post-event</div></td>
+            <td class="qty">—</td>
+            <td class="amount">$1,000</td>
+            <td class="amount">$1,000</td>
+          </tr>
+          <tr>
+            <td><strong>Electrical tie-in</strong><div class="caption" style="margin-top:4px;">$500 per day · 8 days</div></td>
+            <td class="qty">8</td>
+            <td class="amount">$500</td>
+            <td class="amount">$4,000</td>
+          </tr>
+          <tr>
+            <td><strong>Kitchen access</strong><div class="caption" style="margin-top:4px;">Included with all rental packages</div></td>
+            <td class="qty">—</td>
+            <td class="amount">Included</td>
+            <td class="amount">—</td>
+          </tr>
+          <tr class="subtotal">
+            <td colspan="3">Subtotal · Floor 1, 8 days</td>
+            <td class="amount">$355,000</td>
+          </tr>
+          <tr class="total">
+            <td colspan="3"><span class="label">All-in total · Venue A</span>Floor 1 · 1 prep + 6 live + 1 strike</td>
+            <td class="amount">$355,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 16px; max-width: 820px;">
+      Garbage removal is billed per load at $400/load (typically 2–4 loads over a week — variable, finalized post-event). Overtime beyond the 12-hour event day is available at $5,000/hour for Floor 1; $5,625/hour if a second floor is added. Payment by ACH/wire ($25 flat) is preferred; card payments incur a 3.7% processing fee.
+    </p>
+  </div>
+</section>
+
+<!-- ========================================================
+     VENUE B · UPPER EAST SIDE GALLERY HOUSE
+     ======================================================== -->
+<section data-lightbox>
+  <div class="option-header">
+    <div class="option-num">B</div>
+    <div>
+      <div class="option-tag">Venue B · A landmarked townhouse · Upper East Side</div>
+      <h3 class="option-title">A gallery house off Fifth Avenue.<br/>Three floors of architecturally distinct rooms — a porte-cochère entrance and a sculpted-iron staircase running the building's full height.</h3>
+    </div>
+  </div>
+
+  <div class="photo-grid editorial" style="margin-top: 32px;">
+    <div class="photo">
+      <img src="img/venue-b/staircase-up.jpg" alt="Sculpted-iron staircase looking upward — alabaster chandelier and stone treads" />
+    </div>
+    <div class="photo">
+      <img src="img/venue-b/facade-day.jpg" alt="Landmarked stone façade — daytime, off-Fifth Avenue address" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A landmarked Upper East Side townhouse, fully restored as a purpose-built exhibition and entertaining space. Originally a 1913–15 commission designed as a library, exhibition hall, and studio — the kind of building that wears Fendi quietly. Three floors of room types: a porte-cochère and a stone-walled gallery on the ground floor; a stone room and a second gallery one flight up; a wood-panelled gallery and a third gallery above. Each room has its own material identity — limestone, marble, wood marquetry, alabaster — so a brand's collections can be staged with real variety without ever competing with the architecture.</p>
+      <p class="body">For the Fendi week, this is the most curated of the three options: gallery-grade lighting, museum-class restoration, and a discreet address steps from Central Park. Hold-status today: <strong>all dates currently confirmed available</strong>.</p>
+    </div>
+    <div>
+      <div class="photo-grid two">
+        <div class="photo">
+          <img src="img/venue-b/wood-room.jpg" alt="Wood-panelled gallery — parquet floor, marquetry walls, track lighting" />
+        </div>
+        <div class="photo">
+          <img src="img/venue-b/gallery-checker.jpg" alt="Ground-floor gallery — checkerboard marble floor, arched windows, stone walls" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- B · ACROSS ALL THREE FLOORS — six rooms with floor-tag badges -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">B · Across all three floors</div>
+      <div class="line"></div>
+      <div class="text">Six distinct rooms · Floor 1 → Floor 3</div>
+    </div>
+
+    <div class="photo-grid three">
+      <div class="photo">
+        <img src="img/venue-b/gallery-1.jpg" alt="Ground-floor gallery — curved-wall exhibition space with track lighting, parquet floor, marble baseboards" />
+        <span class="floor-tag">Floor 1 · Ground-floor gallery</span>
+      </div>
+      <div class="photo">
+        <img src="img/venue-b/entry-axis.jpg" alt="Entry axis — brick-and-stone porte-cochère opening through to the ground-floor gallery beyond" />
+        <span class="floor-tag">Floor 1 · Entry axis</span>
+      </div>
+      <div class="photo">
+        <img src="img/venue-b/stone-room-windows.jpg" alt="Stone-walled gallery — three arched windows facing the street, black-and-white marble checkerboard floor, red marble baseboards" />
+        <span class="floor-tag">Floor 2 · Stone gallery</span>
+      </div>
+      <div class="photo">
+        <img src="img/venue-b/wood-room-windows.jpg" alt="Wood-panelled gallery — marquetry walls, daylight from leaded windows, opening to upper gallery beyond" />
+        <span class="floor-tag">Floor 3 · Wood-panelled gallery</span>
+      </div>
+      <div class="photo">
+        <img src="img/venue-b/gallery-3.jpg" alt="Top-floor gallery — white-walled with three tall leaded windows looking out over the neighbourhood, parquet floor" />
+        <span class="floor-tag">Floor 3 · Upper gallery</span>
+      </div>
+      <div class="photo">
+        <img src="img/venue-b/wood-room-vignette.jpg" alt="Wood-panelled gallery — marquetry wall detail with vintage cane rocking chair vignette" />
+        <span class="floor-tag">Floor 3 · Marquetry detail</span>
+      </div>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 18px; max-width: 820px;">Six of the building's principal rooms — two on each floor, each with its own material identity. The ground floor sets the arrival sequence; the second floor holds the most formal stone-and-marble gallery; the third floor carries the most photographed marquetry rooms. Click any image to view full-size.</p>
+  </div>
+
+  <!-- B · DETAILS — three architectural details -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">B · Details</div>
+      <div class="line"></div>
+      <div class="text">Arrival · circulation · surprise</div>
+    </div>
+
+    <div class="photo-grid three">
+      <div class="photo">
+        <img src="img/venue-b/porte-cochere.jpg" alt="Porte-cochère entrance — wooden double doors, brick walls, herringbone floor" />
+      </div>
+      <div class="photo">
+        <img src="img/venue-b/staircase-marble-floor.jpg" alt="Sculpted-iron staircase landings viewed from a marble-floored gallery" />
+      </div>
+      <div class="photo">
+        <img src="img/venue-b/restroom-blue.jpg" alt="Ground-floor restroom — cobalt-blue tiled walls, designed as a sculptural moment" />
+      </div>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 14px; max-width: 820px;">The arrival sequence, the building's sculpted-iron staircase that runs its full height, and the ground-floor restroom — designed as a sculptural moment by a contemporary British designer and frequently photographed by visitors.</p>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for the Fendi week</div>
+      <p class="body">Three floors of distinct architectural rooms, full-building exclusivity for the duration of the booking, and an Upper East Side location that's already in Fendi's clients' rotation. The stone-walled gallery on the second floor and the wood-panelled gallery on the third each give Fendi a different staging temperature for the new collection; the ground-floor galleries handle arrival and conversation; the upper floors hold the more private clienteling moments.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· Three floors · six distinct rooms across the building</li>
+        <li>· Porte-cochère arrival · private street access</li>
+        <li>· Gallery-grade lighting, climate, and security throughout</li>
+        <li>· Stone-walled gallery, wood-panelled gallery, two open galleries, alabaster staircase</li>
+        <li>· Off Fifth Avenue · steps from Central Park</li>
+        <li>· All Sept 6–13 dates confirmed available</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- B · PRICING -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">B · Pricing</div>
+      <div class="line"></div>
+      <div class="text">All-in · full building · 8 days</div>
+    </div>
+
+    <div class="breakdown">
+      <table>
+        <thead>
+          <tr>
+            <th>Line item</th>
+            <th class="qty">Days</th>
+            <th class="amount">Rate</th>
+            <th class="amount">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Prep day</strong><div class="caption" style="margin-top:4px;">Sept 6 · load-in, room dressing, walkthrough</div></td>
+            <td class="qty">1</td>
+            <td class="amount">$84,500</td>
+            <td class="amount">$84,500</td>
+          </tr>
+          <tr>
+            <td><strong>Live event days</strong><div class="caption" style="margin-top:4px;">Sept 7–12 · full-building exclusivity, by-appointment access</div></td>
+            <td class="qty">6</td>
+            <td class="amount">$84,500</td>
+            <td class="amount">$507,000</td>
+          </tr>
+          <tr>
+            <td><strong>Strike day</strong><div class="caption" style="margin-top:4px;">Sept 13 · load-out and reset</div></td>
+            <td class="qty">1</td>
+            <td class="amount">$84,500</td>
+            <td class="amount">$84,500</td>
+          </tr>
+          <tr class="subtotal">
+            <td colspan="3">Subtotal · full building, 8 days</td>
+            <td class="amount">$676,000</td>
+          </tr>
+          <tr class="total">
+            <td colspan="3"><span class="label">All-in total · Venue B</span>Full building · 1 prep + 6 live + 1 strike</td>
+            <td class="amount">$676,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 16px; max-width: 820px;">Day rate is consistent across prep, live, and strike — the building is held exclusively for Fendi across the full eight-day window. Any house-required services (security supervisor, building manager presence) are included in the rate.</p>
+  </div>
+</section>
+
+<!-- ========================================================
+     VENUE C · FIFTH AVENUE BEAUX-ARTS MANSION
+     ======================================================== -->
+<section data-lightbox>
+  <div class="option-header">
+    <div class="option-num">C</div>
+    <div>
+      <div class="option-tag">Venue C · A historic mansion · Fifth Avenue · Full-floor buyout</div>
+      <h3 class="option-title">A Beaux-Arts mansion with an institutional pedigree.<br/>Fifth Avenue address, five Floor 1 rooms, ceremonial iron staircase.</h3>
+    </div>
+  </div>
+
+  <!-- C · HERO PAIR — marble salon (money shot) + facade -->
+  <div class="photo-grid editorial" style="margin-top: 32px;">
+    <div class="photo">
+      <img src="img/venue-c/marble-room-cocktail.jpg" alt="Marble salon — gilded Corinthian columns and capitals, mirrored arched alcoves, marble-and-mosaic floor, conservatory daylight from tall windows" />
+    </div>
+    <div class="photo">
+      <img src="img/venue-c/facade.jpg" alt="Daytime Beaux-Arts limestone facade with Corinthian columns, balustrades, and the trees of Central Park alongside" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A Beaux-Arts mansion on Fifth Avenue, across from Central Park, that lets only as a <strong>full first-floor buyout</strong> — five distinct rooms locked together, twelve hours of access per booked day. A ceremonial wrought-iron staircase under a stone vault sets the arrival sequence; a series of salons follow, each with its own material identity (gilded plaster, wood marquetry, marble, library oak). The rooms are scaled like a great private residence — large enough for a 40-staff plus 20-client presence to move comfortably, intimate enough for one-on-one appointments.</p>
+      <p class="body">Hold status: <strong>day rate confirmed; 8-day continuous availability is still being explored</strong>. Full-week commitments at this building are unusual and the lettings committee is reviewing. A single-day buyout for a dinner moment inside the Sept 6–13 window is more readily bookable — see Scenario 2 in the pricing below.</p>
+    </div>
+    <div>
+      <div class="photo-grid two">
+        <div class="photo">
+          <img src="img/venue-c/lecture-hall-dinner.jpg" alt="Gilded reception room set for dinner — chandeliers, peony centerpieces, chiavari chairs around round tables" />
+        </div>
+        <div class="photo">
+          <img src="img/venue-c/loeb-room-dinner.jpg" alt="Wood-panelled dining salon set for dinner — chandeliers, tall arched windows opening onto Central Park, celadon-green tablecloths" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C · FOUR ROOMS GRID -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">C · Across the first floor</div>
+      <div class="line"></div>
+      <div class="text">Five rooms · full-floor buyout</div>
+    </div>
+
+    <div class="photo-grid four">
+      <div class="photo">
+        <img src="img/venue-c/great-hall-arrival.jpg" alt="Ceremonial hall · curved iron staircase, statue niche, marble-inlay floor, arrival table set for guests" />
+        <span class="floor-tag">Hall · Arrival</span>
+      </div>
+      <div class="photo">
+        <img src="img/venue-c/great-hall-warm.jpg" alt="Ceremonial hall · curved iron staircase, stone vaulted entry, crystal chandeliers, dinner tables set on a marble-inlay floor" />
+        <span class="floor-tag">Ceremonial hall</span>
+      </div>
+      <div class="photo">
+        <img src="img/venue-c/library-dinner.jpg" alt="Wood-panelled library · bookshelves, chandeliers, candle sconces, dinner tables with gold chiavaris" />
+        <span class="floor-tag">Library · Dinner</span>
+      </div>
+      <div class="photo">
+        <img src="img/venue-c/marble-room-day.jpg" alt="Marble salon by day · gilded Corinthian capitals, arched mirrors, tall windows onto the street" />
+        <span class="floor-tag">Marble salon · Day</span>
+      </div>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 14px; max-width: 820px;">Click any image to view full-size. All five Floor 1 rooms are included in the buyout — the ceremonial hall, the gilded reception room, the wood-panelled library, the marble salon, and a smaller seminar room. The building rents only as a full-floor buyout — no à la carte rooms.</p>
+  </div>
+
+  <!-- C · DETAILS — arrival sequence shots -->
+  <div style="margin-top: 56px;">
+    <div class="photo-grid two">
+      <div class="photo">
+        <img src="img/venue-c/entrance-night.jpg" alt="Wrought-iron entry doors at night, warmly uplit, with the curved staircase visible through the leaded glass" />
+      </div>
+      <div class="photo">
+        <img src="img/venue-c/marble-room-day.jpg" alt="Marble salon · daylight view emphasising the gilded plasterwork and arched mirror sequence" />
+      </div>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 14px; max-width: 820px;">The arrival sequence reads as a discreet private address rather than an institutional venue — guests step from Fifth Avenue through wrought-iron doors into the ceremonial hall, with the staircase as the first architectural moment.</p>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for the Fendi week</div>
+      <p class="body">An Upper East Side address that Fendi's clients already know how to find, a private-residence scale that fits a 40-staff / 20-client concurrency without feeling rented, and a sequence of rooms with enough material variety to stage a presentation, a tailoring corner, a service area, and a dinner moment without ever leaving the first floor. The dinner-table photos above are from past events the building has hosted — the same room types reset cleanly into a Fendi showroom configuration.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· Fifth Avenue address · Upper East Side · across from Central Park</li>
+        <li>· Beaux-Arts mansion · landmarked institutional building</li>
+        <li>· Full-floor buyout · five rooms across Floor 1</li>
+        <li>· Ceremonial iron staircase · stone-vaulted arrival hall</li>
+        <li>· Gilded reception, wood library, marble salon, dinner-scale room</li>
+        <li>· 12 hours of access per booked day</li>
+        <li>· Per-room capacity comfortably handles ≤20 client concurrency</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- C · PRICING — two scenarios -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">C · Pricing</div>
+      <div class="line"></div>
+      <div class="text">Full first-floor buyout · two scenarios</div>
+    </div>
+
+    <p class="body" style="max-width: 820px; margin-bottom: 24px;">The building rents only as a <strong>full first-floor buyout</strong> — five rooms locked together, twelve hours of access per day. Two ways to fit it into the Fendi window:</p>
+
+    <div class="walk aligned" style="grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px;">
+      <div class="step">
+        <div class="step-num">Scenario 1 · Full week</div>
+        <h4 style="margin-bottom: 14px;">The eight-day showroom</h4>
+        <p class="step-body">All five Floor 1 rooms, locked exclusively for Fendi across the full Sept 6–13 window — 1 prep + 6 live + 1 strike. The most curated option; carries the institutional gravitas across the whole run. Caveat: full-week commitments at this building are unusual and continuous availability is still being explored. If this direction has any pull, we should know within the week whether it firms.</p>
+        <div class="step-price">$312,000<span class="sub">All-in · 8 days × $39,000</span></div>
+      </div>
+      <div class="step">
+        <div class="step-num">Scenario 2 · The dinner</div>
+        <h4 style="margin-bottom: 14px;">A single-day dinner moment</h4>
+        <p class="step-body">If Fendi wants to host the top-client dinner here while the daytime showroom runs at Venue A or B, the building can be booked for a single day inside the Sept 6–13 window. Twelve hours of access to all five Floor 1 rooms — comfortably holds a reception in the marble salon and a seated dinner in the wood-panelled library or the gilded reception room.</p>
+        <div class="step-price">$39,000<span class="sub">All-in · single-day buyout</span></div>
+      </div>
+    </div>
+
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 32px; max-width: 820px;">Per-room capacities: ceremonial hall · 120 reception, 90 dinner. Gilded reception · 100 dinner. Wood library · 75 reception, 60 dinner. Marble salon · 65 reception, 50 dinner. Seminar room · 65 reception, 50 dinner. Any single-room moment above 74 guests requires a Temporary Place of Assembly permit — comfortably handled inside the planning runway.</p>
+  </div>
+</section>
+
+<!-- ========================================================
+     VENUE D · ASTOR-FAMILY TOWNHOUSE
+     ======================================================== -->
+<section data-lightbox>
+  <div class="option-header">
+    <div class="option-num">D</div>
+    <div>
+      <div class="option-tag">Venue D · A landmarked Astor-family townhouse · Upper East Side</div>
+      <h3 class="option-title">A five-story townhouse with ten private rooms and a charming outdoor garden.<br/>Originally built by the Astor family, off Park Avenue.</h3>
+    </div>
+  </div>
+
+  <!-- D · HERO PAIR — Roosevelt Room + Harriman Room (loaded from Astor House CDN) -->
+  <div class="photo-grid editorial" style="margin-top: 32px;">
+    <div class="photo">
+      <img src="https://images.squarespace-cdn.com/content/v1/55bfc5dde4b0eff3c9b8544a/1549643707297-GQVF6DVQRA72BUJIR9OS/Roosevelt.jpg?format=2500w" alt="Roosevelt Room — main reception, parquet floor, tall windows, chandelier" />
+    </div>
+    <div class="photo">
+      <img src="https://images.squarespace-cdn.com/content/v1/55bfc5dde4b0eff3c9b8544a/1549642506720-CJYJTT9WSL42F7HCRXDV/Harriman.jpg?format=2500w" alt="Harriman Room — wood-panelled, fireplace, chandelier, Park Avenue views" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">An elegant <strong>five-story townhouse</strong> on the Upper East Side, just off Park Avenue, originally built by the Astor family and now operating as a landmarked private event house with ten distinct rooms plus a charming outdoor garden. Capacity ranges from intimate (a 10-seat board room) up to a 350-person full-building reception — comfortable headroom for Fendi's 40-staff / 20-client concurrency with room for a dinner moment, a tailoring suite, and back-of-house all on one footprint.</p>
+      <p class="body">Hold status: <strong>availability not yet confirmed for the Sept 6–13 window</strong>. We're surfacing this as an early-stage option for Fendi's reaction — if there's pull, we'll move on a hold immediately.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Room mix · all five floors</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 14px;">
+        <li>· <strong>Reception</strong> · 75 cocktail · 50 dinner · 50 theater</li>
+        <li>· <strong>Main hall</strong> · 125 cocktail · 70 dinner · 90 theater</li>
+        <li>· <strong>Pine room</strong> · combinable with main hall for 225 cocktail</li>
+        <li>· <strong>Garden</strong> · 75 cocktail · 15 dinner · 40 theater</li>
+        <li>· <strong>Board room</strong> · 15 table</li>
+        <li>· <strong>Astor room</strong> · 25 cocktail</li>
+        <li>· <strong>Henderson</strong> · 10 seated</li>
+        <li>· <strong>Schmelzer rooms</strong> · 45 classroom · 70 theater</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- D · MORE ROOMS — Pine Room + Garden + alt Harriman + reception scene (loaded from Astor House CDN) -->
+  <div style="margin-top: 56px;">
+    <div class="divider-label">
+      <div class="text">D · More rooms</div>
+      <div class="line"></div>
+      <div class="text">A landmarked townhouse with a garden</div>
+    </div>
+    <div class="photo-grid four">
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/55bfc5dde4b0eff3c9b8544a/1549639390502-C41EDCWUO6VZCRMH6DRK/Pine+Room.jpg?format=2500w" alt="Pine Room — natural-wood panelling, parquet floor, combinable with the main hall for a 225-cocktail footprint" />
+        <span class="floor-tag">Pine Room</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/55bfc5dde4b0eff3c9b8544a/1549577849942-PLKCR9Q7QO8MTUL5BIQG/Garden.jpg?format=2500w" alt="Outdoor garden — brick-paved terrace with planting, ideal for cocktail or dinner moments under sky" />
+        <span class="floor-tag">Garden</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/55bfc5dde4b0eff3c9b8544a/1549642451912-L1HG81H7K4FK1GRHM89J/Harriman.jpg?format=2500w" alt="Harriman Room, alternate view — wood-panelled walls, fireplace, intimate-scale reception setting" />
+        <span class="floor-tag">Harriman · 2nd view</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/55bfc5dde4b0eff3c9b8544a/1454903466441-1BOGJ7U2LXX7CJTLMVZ5/astorhouse8.jpg?format=2500w" alt="Reception scene — Astor House interior with guests gathered, illustrating the building's atmosphere in use" />
+        <span class="floor-tag">In use · reception</span>
+      </div>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 14px; max-width: 820px;">The Pine Room and the outdoor garden are the two most distinctive moments — the garden in particular is unusual for a townhouse of this scale and gives Fendi a natural-light cocktail or dinner option that none of the other lead venues can match. The fourth image shows the building in use during a private reception, which is the closest reference for the appointment-led atmosphere Fendi would be staging.</p>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for the Fendi week</div>
+      <p class="body">Ten distinct rooms across five stories give Fendi every kind of moment they could want — a public reception level on Floor 1, a piano-nobile main hall on Floor 2 with a balcony, more private clienteling rooms on Floor 3, and quieter executive suites on Floor 4. The outdoor garden is unusual for a townhouse of this size and gives Fendi a natural-light moment for content. Address is in the Upper East Side rhythm Fendi's clients already keep.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· Five-story landmarked townhouse · Upper East Side</li>
+        <li>· Ten distinct event rooms · plus garden</li>
+        <li>· Full-building capacity up to 350 guests</li>
+        <li>· Originally built by the Astor family</li>
+        <li>· Off Park Avenue · steps from Madison</li>
+        <li>· Availability for Sept 6–13 not yet confirmed</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- D · PRICING -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">D · Pricing</div>
+      <div class="line"></div>
+      <div class="text">All-in · full-house buyout</div>
+    </div>
+
+    <div class="breakdown">
+      <table>
+        <thead>
+          <tr>
+            <th>Line item</th>
+            <th class="qty">Days</th>
+            <th class="amount">Rate</th>
+            <th class="amount">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Prep day</strong><div class="caption" style="margin-top:4px;">Sept 6 · load-in, room dressing</div></td>
+            <td class="qty">1</td>
+            <td class="amount">$27,000</td>
+            <td class="amount">$27,000</td>
+          </tr>
+          <tr>
+            <td><strong>Live event days</strong><div class="caption" style="margin-top:4px;">Sept 7–12 · full-building exclusivity</div></td>
+            <td class="qty">6</td>
+            <td class="amount">$27,000</td>
+            <td class="amount">$162,000</td>
+          </tr>
+          <tr>
+            <td><strong>Strike day</strong><div class="caption" style="margin-top:4px;">Sept 13 · load-out and reset</div></td>
+            <td class="qty">1</td>
+            <td class="amount">$27,000</td>
+            <td class="amount">$27,000</td>
+          </tr>
+          <tr class="subtotal">
+            <td colspan="3">Subtotal · full house, 8 days</td>
+            <td class="amount">$216,000</td>
+          </tr>
+          <tr class="total">
+            <td colspan="3"><span class="label">All-in total · Venue D</span>Full house · 1 prep + 6 live + 1 strike</td>
+            <td class="amount">$216,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 16px; max-width: 820px;">Single-room rentals are also available — useful if Fendi wants this as a one-day backup. The full-house buyout above gives the most flexibility for an 8-day showroom and is the option we'd lean toward if availability firms.</p>
+  </div>
+</section>
+
+<!-- ========================================================
+     VENUE E · 1919 PARK AVENUE MANSION
+     ======================================================== -->
+<section data-lightbox>
+  <div class="option-header">
+    <div class="option-num">E</div>
+    <div>
+      <div class="option-tag">Venue E · A 1919 Park Avenue mansion · Upper East Side</div>
+      <h3 class="option-title">A grand 1920s Park Avenue mansion with six event rooms.<br/>A marble staircase connects two floors of original chandeliers, fireplaces, and Park Avenue views.</h3>
+    </div>
+  </div>
+
+  <!-- E · HERO PAIR — Rockefeller Ballroom + Marble Staircase (external squarespace CDN) -->
+  <div class="photo-grid editorial" style="margin-top: 32px;">
+    <div class="photo">
+      <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1588283804299-HVUMQ9LZPGJ4XWX5EQ6E/20180811_StGMiL_Selects0483.jpg?format=2500w" alt="Grand wood-panelled ballroom with double-height Park Avenue windows, cathedral ceiling, fireplace, antique chandeliers, and inlaid floor" />
+    </div>
+    <div class="photo">
+      <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1588281621744-62WWAELGOHMGIQH1FJ1W/6.jpg?format=2500w" alt="Marble staircase rising between the two floors, with carved balustrade and arched windows" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A <strong>1919 Park Avenue mansion</strong> with six event rooms across two floors connected by a majestic marble staircase. Each event room carries original 1920s chandeliers, fireplaces, and Park Avenue views — classic New York glamour with state-of-the-art AV built in. Floor 1 holds three connected rooms (Tudor wood library, modernist white-walled dining room, intimate corner sitting room); Floor 2 holds the grand wood-panelled ballroom, a vaulted marble entry hall, and a two-story library with wrap-around balcony. An adjoining hall — Peterson Hall — adds a 22-foot video wall and 275-person reception capacity for larger moments.</p>
+      <p class="body">Hold status: <strong>building is in active maintenance from mid-June through end of September 2026</strong> — covering the Fendi window. We've surfaced this so Fendi can react to the architecture; if there's pull, we'd push the venue on whether the maintenance can release the dates.</p>
+    </div>
+    <div>
+      <div class="photo-grid two">
+        <div class="photo">
+          <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1586365415616-8P0WNWZJBU7J4F2TTSKN/1.jpg?format=2500w" alt="Floor 1 dining room — crystal chandeliers, hand-carved moldings, designer wallpaper, high ceilings, tall windows" />
+        </div>
+        <div class="photo">
+          <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1588279379242-7RT953OWUBEDP98ROOUO/pg7.bottomleftcorner.jpg?format=2500w" alt="Two-story library with burnished walls, marble fireplace, and a wrap-around balcony" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- E · ROOMS GRID -->
+  <div style="margin-top: 56px;">
+    <div class="divider-label">
+      <div class="text">E · Six rooms across two floors</div>
+      <div class="line"></div>
+      <div class="text">Plus an adjoining hall for larger moments</div>
+    </div>
+
+    <div class="photo-grid three">
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1588362153297-LFYUPCWSZLWXLOFFPOAY/1-4.jpg?format=2500w" alt="Vaulted marble hall at the top of the staircase — original chandeliers, arched plasterwork" />
+        <span class="floor-tag">Floor 2 · Marble hall</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1587052831800-2X18WCUDK6YXEUGJAVIN/3-1.jpg?format=2500w" alt="Floor 1 wood-panelled library — fireplace, intimate corner reception scale" />
+        <span class="floor-tag">Floor 1 · Wood library</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1680186986282-0OIEPVWI733EJ4ZUV953/230329-108.JPG?format=2500w" alt="Floor 1 corner room — architectural moldings, decorative fireplace, intimate scale" />
+        <span class="floor-tag">Floor 1 · Corner room</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1588282064334-P2X11L5K1ACFCG0CS9ZZ/6.png?format=2500w" alt="Adjoining hall — 22-foot video wall, advanced AV, reconfigurable lighting" />
+        <span class="floor-tag">Adjoining hall</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1586365376794-M06NBH9HL0ON3N2MYVFO/4.jpg?format=2500w" alt="Floor 1 dining room — second angle, hand-carved moldings, tall windows" />
+        <span class="floor-tag">Floor 1 · Dining (2)</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1586366149772-F9D7P3EXOAVJ0XWO9ACP/5-1.jpg?format=2500w" alt="Two-story library balcony view — wrap-around mezzanine and chandeliers" />
+        <span class="floor-tag">Floor 2 · Library balcony</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- E · ARCHITECTURAL DETAILS — 4 more shots covering Rockefeller dinner, Peterson dining, AV lab, entrance -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">E · Architectural details</div>
+      <div class="line"></div>
+      <div class="text">Rooms in configuration</div>
+    </div>
+    <div class="photo-grid four">
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1588912875752-XBMEIFPOV3JFXDJASNOH/27+%281%29.jpg?format=2500w" alt="Floor 2 ballroom set for dinner — round tables, candlelight, double-height Park Avenue windows" />
+        <span class="floor-tag">Ballroom · dinner setup</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1680188213607-0FYX7N6RPRC8FZOVMPIR/230329-031.JPG?format=2500w" alt="Adjoining hall set for a seated dinner — 22-foot video wall in the background, theatre-grade lighting" />
+        <span class="floor-tag">Adjoining hall · dining</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1680187239827-UPGMMTIU7B0YLOKXIP6A/230329-064.JPG?format=2500w" alt="AV lab — smaller seminar room with fully integrated audio-visual equipment, plasma screen, video conferencing" />
+        <span class="floor-tag">AV lab · break-out</span>
+      </div>
+      <div class="photo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e56c99c58c24342275c971c/1587051573622-Z54KZW9YZVO345LYDZAM/DSC00804-edited.jpg?format=2500w" alt="Adjoining hall private entrance — limestone townhouse entry with open lobby for registration" />
+        <span class="floor-tag">Private entrance</span>
+      </div>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 14px; max-width: 820px;">The Floor 2 ballroom and the adjoining hall both reset cleanly between configurations — daytime presentation, evening seated dinner, or large reception. The AV lab and the second private entrance to the adjoining hall give Fendi useful operational options for staff and break-out moments.</p>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for the Fendi week</div>
+      <p class="body">If the maintenance window releases, this is a strong showroom-week candidate — Floor 1's three connected rooms make a natural daytime presentation suite, the marble staircase frames every guest's arrival, and Floor 2's ballroom carries any dinner or evening moment Fendi wants to fold in. The two-story library on Floor 2 is particularly memorable: burnished wood walls, marble fireplace, wrap-around mezzanine — a setting that frames clienteling beautifully.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· 1919 Park Avenue mansion · Upper East Side</li>
+        <li>· Six event rooms across two floors · marble staircase</li>
+        <li>· Park Avenue views from every Floor 1 room</li>
+        <li>· Two-story library with mezzanine</li>
+        <li>· Adjoining hall with 22-ft video wall · 275-person reception</li>
+        <li>· Built-in AV throughout · AV tech fee $150/hr (5-hr minimum)</li>
+        <li>· Building in maintenance mid-June through end of September 2026</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- E · PRICING -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">E · Pricing</div>
+      <div class="line"></div>
+      <div class="text">Pending — maintenance release</div>
+    </div>
+
+    <div class="breakdown">
+      <table>
+        <tbody>
+          <tr class="subtle">
+            <td style="padding: 28px 24px;">
+              <strong style="font-size: 15px; color: var(--ink);">Pricing on request, pending maintenance release.</strong><br/>
+              <span style="font-size: 14px;">The venue is in a building-wide maintenance program from mid-June through end of September 2026 — covering Fendi's Sept 6–13 window. Their rate card flexes with space needs, duration, and time of year; once availability is confirmed we'd quote the all-in. Staffing fee is $1,200 per event flat (security + ops manager + facilities manager included). All AV equipment is built in; technician time bills at $150/hour with a 5-hour minimum.</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     VENUE F · BURDEN-KAHN MANSIONS · FIFTH AVENUE & 91ST
+     ======================================================== -->
+<section data-lightbox>
+  <div class="option-header">
+    <div class="option-num">F</div>
+    <div>
+      <div class="option-tag">Venue F · A Gilded-Age pair of mansions · Fifth Avenue at 91st</div>
+      <h3 class="option-title">Two adjacent Gilded-Age mansions on what The New York Times once called "the grandest block in New York."<br/>Available only for weekend or holiday days inside the Fendi window.</h3>
+    </div>
+  </div>
+
+  <!-- F · HERO PAIR — both heroes pulled high-res from the venue website -->
+  <div class="photo-grid editorial" style="margin-top: 32px;">
+    <div class="photo">
+      <img src="https://www.burdenkahnmansion.org/wp-content/uploads/2023/04/ezgif-3-375c44866b-scaled.jpg" alt="Mansion 1 · Assembly hall — Adam ceiling trimmed in gold, inlaid parquet floor, grand crystal chandeliers, marble walls" />
+    </div>
+    <div class="photo">
+      <img src="https://www.burdenkahnmansion.org/wp-content/uploads/2023/04/ezgif-3-fea114e0dc-scaled.jpg" alt="Mansion 2 · A grand reception room with marble walls, sculpted ceilings, and Gilded-Age detail" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A pair of adjacent <strong>Gilded-Age mansions on Fifth Avenue at 91st Street</strong>, directly across from the Cooper Hewitt Museum (the former Andrew Carnegie residence) and a block from the Guggenheim. Each mansion rents independently and each has its own collection of rooms: the Italian Renaissance–style mansion offers an Adam-ceiling assembly hall, a stone-vaulted foyer with coffered ceiling, a courtyard with limestone-and-Central-Park backdrop, and a small theater. The Gilded-Age neighbour offers a viridian-marble banquet hall, a music room with Steinway grand, and a 46-foot ballroom overlooking 91st Street.</p>
+      <p class="body">Hold status: <strong>building is a working school Monday through Friday during the academic year</strong>. Inside the Fendi window the available days are <strong>Sept 6 (Sunday), Sept 7 (Labor Day), Sept 12 (Saturday), and Sept 13 (Sunday)</strong> — four of the eight requested days. Not a fit for an 8-day buyout, but excellent for a single-day dinner moment.</p>
+    </div>
+    <div>
+      <div class="photo-grid two">
+        <div class="photo">
+          <img src="img/venue-f/burden-banquet-dinner.jpg" alt="Banquet hall set for dinner — viridian-green marble walls, gold-cloth tables, gold chiavaris, peony centerpieces" />
+        </div>
+        <div class="photo">
+          <img src="img/venue-f/kahn-courtyard.jpg" alt="Limestone courtyard — interior open-air space with stone balustrades, arched windows, ornate iron lantern" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- F · DETAILS GRID -->
+  <div style="margin-top: 56px;">
+    <div class="divider-label">
+      <div class="text">F · Rooms across both mansions</div>
+      <div class="line"></div>
+      <div class="text">Each mansion ~200-guest capacity</div>
+    </div>
+
+    <div class="photo-grid three">
+      <div class="photo">
+        <img src="https://www.burdenkahnmansion.org/wp-content/uploads/2023/04/ezgif-3-375c44866b-scaled.jpg" alt="Mansion 1 · Assembly hall — Adam ceiling, gold trim, marble pilasters" />
+        <span class="floor-tag">Mansion 1 · Assembly hall</span>
+      </div>
+      <div class="photo">
+        <img src="img/venue-f/burden-ballroom.jpg" alt="Mansion 2 · Ballroom — barrel-vaulted plaster ceiling, double doors onto 91st Street" />
+        <span class="floor-tag">Mansion 2 · Ballroom</span>
+      </div>
+      <div class="photo">
+        <img src="img/venue-f/burden-floral-detail.jpg" alt="Mansion 2 · Banquet detail — gilded boiserie, silk drapery, floral urn vignette" />
+        <span class="floor-tag">Mansion 2 · Banquet detail</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for the Fendi week</div>
+      <p class="body">Not a fit for the 8-day showroom — but a credible candidate for a <strong>single-evening dinner</strong> on either Sept 6 (Sunday) or Sept 13 (Sunday). Each mansion is large enough to host a 90–150-person dinner on its own (banquet hall: 90 dinner; ballroom: 150 dinner) and the Fifth Avenue / 91st Street address sits one block from the Guggenheim and across from the Cooper Hewitt — institutional gravitas comparable to Venue C, with a more residential feel.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· Two adjacent Gilded-Age mansions · Fifth Avenue at 91st</li>
+        <li>· Mansion 1 — assembly hall, foyer, courtyard, theater (200 capacity)</li>
+        <li>· Mansion 2 — banquet hall, music room, 46-ft ballroom (200 capacity)</li>
+        <li>· Each mansion rents separately · combinable</li>
+        <li>· Across from Cooper Hewitt · one block from Guggenheim</li>
+        <li>· Available days inside the window: <strong>Sept 6, 7, 12, 13 only</strong></li>
+        <li>· AC, cleaning, manager, tables, chairs, Steinway, coat check included</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- F · PRICING -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">F · Pricing</div>
+      <div class="line"></div>
+      <div class="text">Single-day dinner moment · one mansion</div>
+    </div>
+
+    <div class="breakdown">
+      <table>
+        <thead>
+          <tr>
+            <th>Line item</th>
+            <th class="qty">Hours</th>
+            <th class="amount">Rate</th>
+            <th class="amount">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>One mansion · evening dinner</strong><div class="caption" style="margin-top:4px;">Sept 6 or Sept 13 · 10-hour window incl. set-up &amp; breakdown</div></td>
+            <td class="qty">10</td>
+            <td class="amount">$3,000</td>
+            <td class="amount">$30,000</td>
+          </tr>
+          <tr class="total">
+            <td colspan="3"><span class="label">All-in · Venue F</span>Single mansion · 10-hour dinner moment</td>
+            <td class="amount">$30,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 16px; max-width: 820px;">Pricing scales linearly with event hours; both mansions can be combined for a larger footprint. Additional security guards and coat check scale with guest count and event length. The venue's working-school constraint means the rental is only available on weekend or holiday days inside the Fendi window — best fit is a Sunday-evening kickoff or closing dinner.</p>
+  </div>
+</section>
+
+<!-- =================== AT A GLANCE COMPARISON =================== -->
+<section class="full" style="background: var(--cream-deep);">
+  <div class="inner">
+    <div class="superhead">At a glance</div>
+    <h2 class="title" style="font-size: clamp(34px, 4.5vw, 56px); margin-top: 18px; max-width: 980px;">Six architectures. Three lead candidates, three alternatives.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 820px; color: var(--ink-soft);">Same eight-day window. Lead shortlist on top; alternative options (each with its own availability caveat) below.</p>
+  </div>
+  <div class="inner">
+    <div class="caption" style="margin-top: 48px; margin-bottom: 18px;">Lead shortlist · firm pricing</div>
+    <div class="walk aligned">
+      <div class="step">
+        <div class="step-num">Venue A</div>
+        <h4>A landmarked Manhattan mansion · Floor 1 (expandable)</h4>
+        <p class="step-body">Multi-floor flexibility. Kitchen on premises. Holds challengeable — book quickly to lock the dates.</p>
+        <div class="step-price">$355,000<span class="sub">All-in · Floor 1 · 8 days</span></div>
+      </div>
+      <div class="step">
+        <div class="step-num">Venue B</div>
+        <h4>An Upper East Side gallery house · full building</h4>
+        <p class="step-body">Three floors, six rooms, museum-class restoration. All Sept 6–13 dates currently available.</p>
+        <div class="step-price">$676,000<span class="sub">All-in · full building · 8 days</span></div>
+      </div>
+      <div class="step">
+        <div class="step-num">Venue C</div>
+        <h4>A Beaux-Arts mansion on Fifth Avenue · full-floor buyout</h4>
+        <p class="step-body">Institutional pedigree, five Floor 1 rooms, ceremonial staircase. Day rate confirmed; full-week availability still being explored.</p>
+        <div class="step-price">$312,000<span class="sub">All-in · 8 days &nbsp;·&nbsp; or $39,000 for a 1-day dinner</span></div>
+      </div>
+    </div>
+
+    <div class="caption" style="margin-top: 56px; margin-bottom: 18px;">Alternative options · early-stage</div>
+    <div class="walk aligned">
+      <div class="step" style="border-top-color: var(--ink-soft);">
+        <div class="step-num" style="color: var(--ink-soft);">Venue D</div>
+        <h4>A 5-story Astor-family townhouse · 10 rooms + garden</h4>
+        <p class="step-body">Off Park Avenue, 350-guest capacity, garden moment. Availability not yet confirmed for the window.</p>
+        <div class="step-price" style="color: var(--ink);">$216,000<span class="sub">All-in · full house · 8 days</span></div>
+      </div>
+      <div class="step" style="border-top-color: var(--ink-soft);">
+        <div class="step-num" style="color: var(--ink-soft);">Venue E</div>
+        <h4>A 1919 Park Avenue mansion · 6 rooms + adjoining hall</h4>
+        <p class="step-body">Marble staircase, two-story library, 22-ft video wall in adjoining hall. Building in maintenance through end of September 2026.</p>
+        <div class="step-price" style="color: var(--ink-soft);">On request<span class="sub">Pending maintenance release</span></div>
+      </div>
+      <div class="step" style="border-top-color: var(--ink-soft);">
+        <div class="step-num" style="color: var(--ink-soft);">Venue F</div>
+        <h4>A pair of Gilded-Age mansions · Fifth Avenue at 91st</h4>
+        <p class="step-body">Only weekend/holiday days available in the window — best fit for a one-night dinner moment on Sept 6 or Sept 13.</p>
+        <div class="step-price" style="color: var(--ink);">$30,000<span class="sub">All-in · single mansion · 1-night dinner</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SERVICES NOTE (TEAL CALLOUT) =================== -->
+<section class="full">
+  <div class="callout teal">
+    <div class="inner">
+      <div class="superhead" style="color: rgba(255,255,255,0.9);">Beyond the venue</div>
+      <h2 class="title" style="color: #FFF; margin-top: 18px; max-width: 1100px; font-size: clamp(30px, 4vw, 52px);">Security, food and beverage, photography, floor staffing, production — we can layer any of these in once a venue is locked.</h2>
+      <p class="lede" style="margin-top: 24px; max-width: 760px;">The numbers in this deck are the venue figures, clean. When Fendi is ready, we'll bring forward shortlists for the service layers most useful for the week — drawn from caterers, security firms, and production partners we work with regularly on private client moments at this level.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =================== NEXT STEPS =================== -->
+<section class="full">
+  <div class="callout" style="background: var(--ink); color: var(--cream);">
+    <div class="inner">
+      <div class="superhead" style="color: var(--terracotta);">What we need from you</div>
+      <h2 class="title" style="color: var(--cream); margin-top: 18px; max-width: 980px;">Two short answers and we can hold the right room.</h2>
+    </div>
+    <div class="inner" style="margin-top: 48px;">
+      <div class="walk">
+        <div class="step" style="border-top-color: var(--terracotta);">
+          <div class="step-num" style="color: var(--terracotta);">01</div>
+          <h4 style="color: var(--cream);">Which venue direction</h4>
+          <p style="color: rgba(245,242,232,0.78);">From the lead shortlist (A, B, C) or one of the alternatives (D, E, F) — or a hybrid: Venue A or B for the daytime showroom paired with Venue C or F for a one-night dinner. We'd recommend moving on holds for A and B this week (particularly A — competing holds are in play). For Venues D and E we need a green-light to pursue availability seriously.</p>
+        </div>
+        <div class="step" style="border-top-color: var(--terracotta);">
+          <div class="step-num" style="color: var(--terracotta);">02</div>
+          <h4 style="color: var(--cream);">Floor footprint (Venue A only)</h4>
+          <p style="color: rgba(245,242,232,0.78);">If Venue A is the direction, confirm Floor 1 alone or layer in additional floors for tailoring, clienteling, or executive use. We'll come back with floor-specific pricing within 24 hours of your answer.</p>
+        </div>
+        <div class="step" style="border-top-color: var(--terracotta);">
+          <div class="step-num" style="color: var(--terracotta);">03</div>
+          <h4 style="color: var(--cream);">Service layers to start sourcing</h4>
+          <p style="color: rgba(245,242,232,0.78);">Once a venue is locked, flag the service layers Fendi wants us to bring forward — security, F&amp;B, photography, floor staffing, production — and we'll open a second deck for those.</p>
+        </div>
+      </div>
+    </div>
+    <div class="inner" style="margin-top: 56px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <a href="mailto:eduard@cocoonflexspaces.com?subject=Fendi Showroom — September 6–13 · venue direction" class="cta-pill terracotta">Reply to Eduard →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="inner">
+    <div>
+      <div class="sig">Eduard Monteagudo · Cocoon Flex Spaces</div>
+      <div class="meta" style="margin-top: 6px;">eduard@cocoonflexspaces.com</div>
+    </div>
+    <div class="meta" style="text-align: right;">
+      <div>Prepared for Fendi · Showroom &amp; Client Events</div>
+      <div style="margin-top: 4px;">September 6–13, 2026 · New York · By appointment</div>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX — fullscreen viewer for venue photos -->
+<script>
+(function () {
+  const targets = document.querySelectorAll('section[data-lightbox] .photo img');
+  if (!targets.length) return;
+
+  const lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.setAttribute('aria-hidden', 'true');
+  lb.innerHTML =
+    '<button type="button" class="lightbox-close" aria-label="Close (Esc)">×</button>' +
+    '<img src="" alt="" />' +
+    '<div class="lightbox-caption">Click anywhere or press Esc to close</div>';
+  document.body.appendChild(lb);
+
+  const lbImg = lb.querySelector('img');
+  const closeBtn = lb.querySelector('.lightbox-close');
+
+  function open(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    setTimeout(function () { lbImg.src = ''; lbImg.alt = ''; }, 250);
+  }
+
+  targets.forEach(function (img) {
+    img.style.cursor = 'zoom-in';
+    img.parentElement.addEventListener('click', function () {
+      open(img.currentSrc || img.src, img.alt);
+    });
+  });
+
+  lb.addEventListener('click', function (e) {
+    if (e.target === lb || e.target === lbImg) close();
+  });
+  closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lb.classList.contains('open')) close();
+  });
+})();
+</script>
+
+</body>
+</html>
